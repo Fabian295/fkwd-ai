@@ -1,0 +1,43 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"theme_clr_showcase": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"primebg",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Color",
+									"value": "#032833"
+								}
+							],
+							[
+								"primetext",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Color",
+									"value": "#C2ECF2"
+								}
+							],
+							[
+								"primeaccent",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Color",
+									"value": "#05969E"
+								}
+							]
+						]
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]

@@ -1,0 +1,49 @@
+{
+  "id": "hero_unboxed",
+  "type": "SharedSlice",
+  "name": "HeroUnboxed",
+  "description": "HeroUnboxed",
+  "variations": [
+    {
+      "id": "default",
+      "name": "ThemeColorMenu",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "theme_clr_showcase": {
+          "type": "Group",
+          "config": {
+            "label": "Theme_Clr_Showcase",
+            "repeat": true,
+            "fields": {
+              "primebg": {
+                "type": "Color",
+                "config": {
+                  "label": "primeBG",
+                  "placeholder": "Prime bg #152B1F"
+                }
+              },
+              "primetext": {
+                "type": "Color",
+                "config": {
+                  "label": "primeText",
+                  "placeholder": "Prime text #FFF515"
+                }
+              },
+              "primeaccent": {
+                "type": "Color",
+                "config": {
+                  "label": "primeAccent",
+                  "placeholder": "Prime accent #F10FF00"
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

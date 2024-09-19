@@ -1,0 +1,320 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"heading": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "The new\nGold Standard.",
+							"spans": [
+								{
+									"type": "em",
+									"start": 8,
+									"end": 21
+								}
+							]
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Introducing a new way of building components and layouts that leaves everything else in the dust.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"bento": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Come up with new ideas faster than you can open Photoshop",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"image",
+								{
+									"origin": {
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1587653915936-5623ea0b949a",
+										"width": 4000,
+										"height": 4000
+									},
+									"url": "https://images.unsplash.com/photo-1587653915936-5623ea0b949a?rect=0%2C571%2C4000%2C2857&w=700&h=500",
+									"width": 700,
+									"height": 500,
+									"edit": {
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 571
+										},
+										"background": "transparent"
+									},
+									"credits": null,
+									"alt": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {}
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading3",
+											"content": {
+												"text": "Endless Ideation",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"wide",
+								{
+									"__TYPE__": "BooleanContent",
+									"value": false
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading3",
+											"content": {
+												"text": "Lorem Ipsem",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Introducing a new way of building components and layouts.",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"image",
+								{
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1616963738682-9df1389e5932?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw3fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MjUzMDE3MjJ8MA&ixlib=rb-4.0.3&q=85&rect=117,0,3289,2349&w=700&h=500",
+									"alt": "close up photo of green fruits",
+									"origin": {
+										"id": "XBMe5NM4ZHs",
+										"url": "https://images.unsplash.com/photo-1616963738682-9df1389e5932?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw3fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MjUzMDE3MjJ8MA&ixlib=rb-4.0.3&q=85",
+										"width": 3523,
+										"height": 2349
+									},
+									"width": 700,
+									"height": 500,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 117,
+											"y": 0
+										}
+									},
+									"credits": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {}
+								}
+							],
+							[
+								"wide",
+								{
+									"__TYPE__": "BooleanContent",
+									"value": true
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading3",
+											"content": {
+												"text": "Benchmark with AI",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Never worry about pixel perfection again, thanks to our patented AI critic, telling you when something is misaligned.",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"wide",
+								{
+									"__TYPE__": "BooleanContent",
+									"value": true
+								}
+							],
+							[
+								"image",
+								{
+									"__TYPE__": "ImageContent",
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1610040855959-27944b04f12d?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw0fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MjUzMDE3MjJ8MA&ixlib=rb-4.0.3&q=85&rect=0,220,5143,3674&w=700&h=500",
+									"alt": "orange fruit on brown wooden table",
+									"origin": {
+										"id": "agP9RgnWZAY",
+										"url": "https://images.unsplash.com/photo-1610040855959-27944b04f12d?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw0fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MjUzMDE3MjJ8MA&ixlib=rb-4.0.3&q=85",
+										"width": 5143,
+										"height": 4114
+									},
+									"width": 700,
+									"height": 500,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 220
+										}
+									},
+									"thumbnails": {}
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading3",
+											"content": {
+												"text": "Win WIN",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Fast,  fast and versatile. You ask we deliver|!",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"image",
+								{
+									"__TYPE__": "ImageContent",
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1618381898514-2b6bcb4f8d40?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxM3x8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzI1MzAxNzIyfDA&ixlib=rb-4.0.3&q=85&rect=0,1286,4800,3429&w=700&h=500",
+									"alt": "yellow fruit with blue background",
+									"origin": {
+										"id": "CFTFkR6ydu0",
+										"url": "https://images.unsplash.com/photo-1618381898514-2b6bcb4f8d40?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxM3x8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzI1MzAxNzIyfDA&ixlib=rb-4.0.3&q=85",
+										"width": 4800,
+										"height": 6000
+									},
+									"width": 700,
+									"height": 500,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 1286
+										}
+									},
+									"thumbnails": {}
+								}
+							]
+						]
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]

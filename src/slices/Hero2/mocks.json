@@ -1,0 +1,155 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "Fellow"
+						}
+					}
+				]
+			},
+			"eyebrowHeadline": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "This is the age of development ... a true Dev Dynasty"
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Reprehenderit ex labore magna id exercitation deserunt fugiat laboris. Culpa aliquip non dolore labore consectetur id commodo enim tempor magna minim adipisicing mollit nostrud ea."
+						}
+					}
+				]
+			},
+			"image": {
+				"url": "https://images.unsplash.com/photo-1584559582128-b8be739912e1?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw5fHxmcnVpdHxlbnwwfHx8fDE2OTQ0NDI5NzZ8MA&ixlib=rb-4.0.3&q=85",
+				"origin": {
+					"id": "h5yMpgOI5nI",
+					"url": "https://images.unsplash.com/photo-1584559582128-b8be739912e1?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw5fHxmcnVpdHxlbnwwfHx8fDE2OTQ0NDI5NzZ8MA&ixlib=rb-4.0.3&q=85",
+					"width": 3710,
+					"height": 3710
+				},
+				"width": 3710,
+				"height": 3710,
+				"edit": {
+					"background": "transparent",
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				"credits": null,
+				"alt": "Image Content",
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"callToActionLabel": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Call to Action"
+			},
+			"callToActionLink": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "https://prismic.io",
+					"target": ""
+				}
+			}
+		},
+		"items": []
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "imageRight",
+		"primary": {
+			"eyebrowHeadline": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Image Right"
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "Build a website",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Learn how prismic.io helps thousands of businesses around the world with some of our customers’ use-cases, including Image Right slice variations!",
+							"spans": []
+						},
+						"direction": "ltr"
+					},
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "\nBy the way: this RichText field supports multi-paragraph!",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"image": {
+				"provider": "imgix",
+				"url": "https://images.unsplash.com/photo-1483058712412-4245e9b90334?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyMnx8d2ViJTIwZGV2fGVufDB8fHx8MTcyNTM1MzY0MXww&ixlib=rb-4.0.3&q=85",
+				"alt": "silver iMac with keyboard and trackpad inside room",
+				"origin": {
+					"id": "KE0nC8-58MQ",
+					"url": "https://images.unsplash.com/photo-1483058712412-4245e9b90334?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyMnx8d2ViJTIwZGV2fGVufDB8fHx8MTcyNTM1MzY0MXww&ixlib=rb-4.0.3&q=85",
+					"width": 5760,
+					"height": 3840
+				},
+				"width": 5760,
+				"height": 3840,
+				"edit": {
+					"background": "transparent",
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				"credits": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"callToActionLabel": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Call to Action"
+			},
+			"callToActionLink": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "https://prismic.io",
+					"target": ""
+				}
+			}
+		},
+		"items": []
+	}
+]

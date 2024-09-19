@@ -1,0 +1,38 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"showcase": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"icon_logo",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "css",
+									"type": "Select"
+								}
+							]
+						]
+					}
+				]
+			},
+			"landing_hero": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Eiusmod amet sunt labore."
+						}
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]

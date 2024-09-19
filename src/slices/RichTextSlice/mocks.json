@@ -1,0 +1,58 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"content_block": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Irure occaecat dolor duis mollit occaecat consequat minim Lorem ad laborum velit ea. Aliqua proident eu dolor voluptate nostrud commodo culpa id ullamco."
+						}
+					}
+				]
+			},
+			"content": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"content_heading",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading1",
+											"content": {
+												"text": "Manner"
+											}
+										}
+									]
+								}
+							],
+							[
+								"content_body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Labore voluptate officia voluptate exercitation duis sint tempor consectetur qui sint nostrud quis. Et magna ad commodo eu ut est Lorem exercitation consequat consectetur aliquip exercitation in. Amet consequat duis irure anim."
+											}
+										}
+									]
+								}
+							]
+						]
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]

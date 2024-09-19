@@ -1,0 +1,82 @@
+{
+  "id": "cases",
+  "type": "SharedSlice",
+  "name": "Cases",
+  "description": "Cases",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "case_title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Case Title",
+            "placeholder": "Case  title, name",
+            "allowTargetBlank": true,
+            "single": "heading1"
+          }
+        },
+        "case_body": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Case Body",
+            "placeholder": "Short Intro or description",
+            "allowTargetBlank": true,
+            "single": "paragraph"
+          }
+        },
+        "case_image": {
+          "type": "Image",
+          "config": {
+            "label": "Case Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "directionRow",
+      "name": "Direction Row",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "case_title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Case Title",
+            "placeholder": "Case  title, name",
+            "allowTargetBlank": true,
+            "single": "heading1"
+          }
+        },
+        "case_body": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Case Body",
+            "placeholder": "Short Intro or description",
+            "allowTargetBlank": true,
+            "single": "paragraph"
+          }
+        },
+        "case_image": {
+          "type": "Image",
+          "config": {
+            "label": "Case Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"company": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Company Name Text",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Do aliqua in velit id ex minim. Nulla commodo minim magna est eu esse sint."
+						}
+					}
+				]
+			},
+			"logo_image": {
+				"__TYPE__": "ImageContent",
+				"provider": "imgix",
+				"url": "https://images.unsplash.com/photo-1554350747-ec45fd24f51b?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMHx8bmlrZSUyMDUwMHg0MDB8ZW58MHx8fHwxNzI1OTUxNTU5fDA&ixlib=rb-4.0.3&q=85",
+				"alt": "turned-on white Nike neon light signage",
+				"origin": {
+					"id": "6fIL-DqVNiU",
+					"url": "https://images.unsplash.com/photo-1554350747-ec45fd24f51b?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMHx8bmlrZSUyMDUwMHg0MDB8ZW58MHx8fHwxNzI1OTUxNTU5fDA&ixlib=rb-4.0.3&q=85",
+					"width": 3649,
+					"height": 5474
+				},
+				"width": 3649,
+				"height": 5474,
+				"edit": {
+					"background": "transparent",
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				"thumbnails": {}
+			},
+			"heading": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Case Study Title",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing elit ut aliquam purus sit amet luctus venenatis. Scelerisque in dictum non consectetur a erat nam.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"case_studies": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": []
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": []
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	}
+]

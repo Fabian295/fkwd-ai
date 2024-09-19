@@ -1,0 +1,61 @@
+{
+  "id": "rich_text",
+  "type": "SharedSlice",
+  "name": "RichText",
+  "description": "RichText",
+  "variations": [
+    {
+      "id": "default",
+      "name": "CaseStudies",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "RichText",
+      "primary": {
+        "heading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Heading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading2"
+          }
+        },
+        "body": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Body",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph"
+          }
+        },
+        "logo_image": {
+          "type": "Image",
+          "config": {
+            "label": "Logo Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "case_studies": {
+          "type": "Group",
+          "config": {
+            "label": "Case Studies",
+            "repeat": true,
+            "fields": {
+              "case_study": {
+                "type": "Link",
+                "config": {
+                  "label": "Case Study",
+                  "select": "document"
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

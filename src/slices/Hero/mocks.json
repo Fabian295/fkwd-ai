@@ -1,0 +1,140 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"heading": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "Fourth"
+						}
+					}
+				]
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Dolore dolore velit minim dolor irure. Labore velit voluptate dolor eu aliquip laborum consectetur enim enim excepteur culpa consequat aliquip sint deserunt."
+						}
+					}
+				]
+			},
+			"button_label": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Link label text"
+			},
+			"image": {
+				"provider": "imgix",
+				"url": "https://images.unsplash.com/photo-1616963738682-9df1389e5932?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw3fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MjQ4NjMyNTd8MA&ixlib=rb-4.0.3&q=85",
+				"alt": "close up photo of green fruits",
+				"origin": {
+					"id": "XBMe5NM4ZHs",
+					"url": "https://images.unsplash.com/photo-1616963738682-9df1389e5932?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw3fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MjQ4NjMyNTd8MA&ixlib=rb-4.0.3&q=85",
+					"width": 3523,
+					"height": 2349
+				},
+				"width": 3523,
+				"height": 2349,
+				"edit": {
+					"background": "transparent",
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				"credits": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"button_link": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "https://google.nl",
+					"target": ""
+				}
+			}
+		},
+		"items": []
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "bgFkwdImage",
+		"primary": {
+			"heading": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "Carefully"
+						}
+					}
+				]
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "<h2> Non et aliquip non incididunt ad incididunt.</h2>",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"button_label": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "fkwebdev"
+			},
+			"image": {
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1547394765-185e1e68f34e",
+					"width": 6000,
+					"height": 4000
+				},
+				"url": "https://images.unsplash.com/photo-1547394765-185e1e68f34e",
+				"width": 6000,
+				"height": 4000,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					},
+					"background": "transparent"
+				},
+				"credits": null,
+				"alt": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"button_link": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "https://fkwebdev.com",
+					"target": "_blank"
+				}
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	}
+]
