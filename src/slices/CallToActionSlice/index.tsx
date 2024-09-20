@@ -42,7 +42,7 @@ const CallToActionSlice = ({ slice }: CallToActionSliceProps): JSX.Element => {
         </div>
       </div>
 
-      <div className="text-balance mt-8 max-w-xl text-5xl">
+      <div className="text-balance mt-8 max-w-4xl text-4xl">
         <PrismicText field={slice.primary.heading} />
       </div>
 
