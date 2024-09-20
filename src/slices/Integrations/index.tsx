@@ -47,7 +47,7 @@ const icons = {
       <StarBackground />
       <div className="relative">
 
-        <h2 className="max-w-2xl text-balance text-center text-5xl font-medium mx-auto md:text-7xl">
+        <h2 className="max-w-5xl text-balance text-center text-5xl font-medium mx-auto md:text-5xl">
           <PrismicText field={slice.primary.heading} />
         </h2>
 
