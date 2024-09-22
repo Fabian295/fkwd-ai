@@ -588,6 +588,52 @@ export interface BentoSliceDefaultPrimaryBentoItem {
 }
 
 /**
+ * Item in *Bento → Flow Mix → Primary → Bento*
+ */
+export interface BentoSliceFlowMixPrimaryBentoItem {
+  /**
+   * Image field in *Bento → Flow Mix → Primary → Bento*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: bento.flowMix.primary.bento[].image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  image: prismic.ImageField<never>;
+
+  /**
+   * Title field in *Bento → Flow Mix → Primary → Bento*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: bento.flowMix.primary.bento[].title
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  title: prismic.RichTextField;
+
+  /**
+   * Body field in *Bento → Flow Mix → Primary → Bento*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Box content
+   * - **API ID Path**: bento.flowMix.primary.bento[].body
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  body: prismic.RichTextField;
+
+  /**
+   * wide field in *Bento → Flow Mix → Primary → Bento*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: bento.flowMix.primary.bento[].wide
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  wide: prismic.BooleanField;
+}
+
+/**
  * Primary content in *Bento → Default → Primary*
  */
 export interface BentoSliceDefaultPrimary {
@@ -636,9 +682,57 @@ export type BentoSliceDefault = prismic.SharedSliceVariation<
 >;
 
 /**
+ * Primary content in *Bento → Flow Mix → Primary*
+ */
+export interface BentoSliceFlowMixPrimary {
+  /**
+   * Heading field in *Bento → Flow Mix → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Italic and/or bold (colored) text
+   * - **API ID Path**: bento.flowMix.primary.heading
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  heading: prismic.RichTextField;
+
+  /**
+   * Body field in *Bento → Flow Mix → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Content of your choosing
+   * - **API ID Path**: bento.flowMix.primary.body
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  body: prismic.RichTextField;
+
+  /**
+   * Bento field in *Bento → Flow Mix → Primary*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: bento.flowMix.primary.bento[]
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  bento: prismic.GroupField<Simplify<BentoSliceFlowMixPrimaryBentoItem>>;
+}
+
+/**
+ * Flow Mix variation for Bento Slice
+ *
+ * - **API ID**: `flowMix`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type BentoSliceFlowMix = prismic.SharedSliceVariation<
+  "flowMix",
+  Simplify<BentoSliceFlowMixPrimary>,
+  never
+>;
+
+/**
  * Slice variation for *Bento*
  */
-type BentoSliceVariation = BentoSliceDefault;
+type BentoSliceVariation = BentoSliceDefault | BentoSliceFlowMix;
 
 /**
  * Bento Shared Slice
@@ -2119,8 +2213,11 @@ declare module "@prismicio/client" {
       BentoSlice,
       BentoSliceDefaultPrimaryBentoItem,
       BentoSliceDefaultPrimary,
+      BentoSliceFlowMixPrimaryBentoItem,
+      BentoSliceFlowMixPrimary,
       BentoSliceVariation,
       BentoSliceDefault,
+      BentoSliceFlowMix,
       CallToActionSlice,
       CallToActionSliceDefaultPrimary,
       CallToActionSliceAlignLeftPrimary,
