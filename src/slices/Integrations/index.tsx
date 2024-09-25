@@ -7,12 +7,14 @@ import StylizedLogoMark from "./StylizedLogoMark";
 import Bounded from "@/components/Bounded";
 import StarBackground from "./StarBackground";
 import  background from './background.jpg'
+import flave from './flave-csi.png'
 import React from "react";
 import FkLogoDiamond from "@/components/FKLogoDiamond";
 import DiamondFK from "./DiamondFK";
 import clsx from "clsx";
 // import PlainGradientLogo from "../CallToActionSlice/PlainGradientLogo";
 import FkIconLogoBlueSM from "../../components/FkIconLogoBlueSM";
+import FKLogoBlueXS from "../../components/FKLogoBlueXS";
 
 /**
  * Props for `Integrations`.
@@ -44,10 +46,15 @@ const icons = {
         fill
         className="object-cover" alt={""}
        />
-      <StarBackground />
+              <Image 
+        src={flave}
+        fill
+        className="object-cover opacity-35" alt={""}
+       />
+      {/* <StarBackground /> */}
       <div className="relative">
 
-        <h2 className="max-w-5xl text-balance text-center text-5xl font-medium mx-auto md:text-5xl">
+        <h2 className="max-w-5xl text-balance text-center text-5xl font-medium mx-auto md:text-6xl">
           <PrismicText field={slice.primary.heading} />
         </h2>
 
@@ -55,7 +62,7 @@ const icons = {
           <PrismicRichText field={slice.primary.body} />
         </div>
 
-        <div className="mt-20 flex flex-col items-center md:flex-row">
+        <div className="mt-20 flex flex-col items-center md:flex-row md:max-w-7xl md:mx-auto">
         {slice.primary.icons.map((item, index) => (
           // Render the item
           <React.Fragment key={index}>
@@ -67,7 +74,8 @@ const icons = {
                 {/* <DiamondFK /> */}
                 {/* <div className="max-w-[160px] max-h-[160px] aspect-square"> */}
                   {/* <FkIconLogoBlue/> */}
-                  <FkIconLogoBlueSM/>
+                  {/* <FkIconLogoBlueSM/> */}
+                  <FKLogoBlueXS />
                 {/* </div> */}
                 <div className="signal-line rotate-180 bg-gradient-to-t" />
               </>
