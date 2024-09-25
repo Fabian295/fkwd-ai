@@ -24,7 +24,7 @@ export default function NavBar( {settings }: NavBarProps ) {
             <div className="mx-auto flex-col max-w-6xl justify-between py-2 font-medium  text-white md:flex-row md:items-center  flex">
                
             <div className="flex items-center justify-between">
-                <Link href="/" className="z-50" onClick={() => setOpen(false)}>
+                <Link href="/landing" className="z-50" onClick={() => setOpen(false)}>
                     <WordMark />
                     <span className="sr-only">FKWD-ai Home Page</span>
                 </Link>
