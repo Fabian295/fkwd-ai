@@ -23,7 +23,7 @@ const Bento = ({ slice }: BentoProps): JSX.Element => {
       <PrismicRichText field={slice.primary.heading}
       components={{
         heading2: ({ children }) => (
-          <h2 className="text-balance text-center text-5xl font-medium md:text-7xl">
+          <h2 className="text-balance text-center text-4xl font-medium md:text-5xl">
             { children }
           </h2>
         ),
@@ -64,6 +64,8 @@ const Bento = ({ slice }: BentoProps): JSX.Element => {
 
     </div> */}
 
+    {slice.variation === "default"}
+
     <div className="mt-16 grid max-w-4xl grid-rows-[auto_auto_auto] gap-8 md:grid-cols-3 md:gap-10">
         {slice.primary.bento.map((item) => (
           <div
@@ -73,13 +75,20 @@ const Bento = ({ slice }: BentoProps): JSX.Element => {
             )}
             key={asText(item.title)}
           >
-            <h3 className="text-2xl">
+            <h3 className={clsx("text-2xl",
+            slice.variation === "flowMix" ? "row-start-2 row-span-1" : ""
+
+            )}>
               <PrismicText field={item.title} />
             </h3>
-            <div className="max-w-md text-balance text-slate-300">
+            <div className={clsx("max-w-md text-balance text-slate-300",
+            slice.variation === "flowMix" ? "row-start-3 row-span-1" : ""
+            )}>
               <PrismicRichText field={item.body} />
             </div>
-            <PrismicNextImage field={item.image} className="max-h-36 w-fit object-cover" />
+            <PrismicNextImage field={item.image} className={clsx("max-h-36 w-fit object-cover",
+            slice.variation === "flowMix" ? "row-start-1 row-span-1" : ""
+            )} />
           </div>
         ))}
       </div>
