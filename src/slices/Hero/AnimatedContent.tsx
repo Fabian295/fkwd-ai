@@ -17,7 +17,7 @@ export default function AnimatedContent({ slice }: {slice: Content.HeroSlice}) {
 
     useGSAP(() => {
 
-        const tl = gsap.timeline()
+        const tl = gsap.timeline({ defaults: { ease: "power2.inOut" } });
 
         tl.fromTo(".hero__heading", {scale: 0.5}, {scale: 1, opacity: 1})
         tl.fromTo(".hero__body", {scale: 0.5}, {scale: 1, opacity: 1})
@@ -30,13 +30,13 @@ export default function AnimatedContent({ slice }: {slice: Content.HeroSlice}) {
         <div className="relative" ref={container}>
             <StarGrid />
             {isFilled.richText(slice.primary.heading) && (
-            <h1 className="hero__heading text-balance text-violet-400 text-2xl font-medium md:text-4xl opacity-0">
+            <h1 className="hero__heading text-balance text-violet-400 text-3xl max-w-xl mx-auto font-medium md:max-w-3xl md:text-4xl  lg:max-w-4xl lg:text-5xl first-letter: opacity-0">
                 <PrismicText field={slice.primary.heading} />
             </h1>
             )}
             
             {isFilled.richText(slice.primary.body) && (
-            <div className="hero__body mx-auto mt-6 text-slate-300 text-balance max-w-md md:max-w-4xl opacity-0">
+            <div className="hero__body mx-auto mt-6 text-slate-300 text-center text-balance text-sm max-w-md md:max-w-xl lg:max-w-4xl lg:text-lg opacity-0">
                 <PrismicRichText field={slice.primary.body} />
             </div>
             )}
