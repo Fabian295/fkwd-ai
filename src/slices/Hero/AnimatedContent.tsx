@@ -36,7 +36,7 @@ export default function AnimatedContent({ slice }: {slice: Content.HeroSlice}) {
             )}
             
             {isFilled.richText(slice.primary.body) && (
-            <div className="hero__body mx-auto mt-6 text-slate-300 text-center text-balance text-sm max-w-md md:max-w-xl lg:max-w-4xl lg:text-lg opacity-0">
+            <div className="hero__body mx-auto mt-6 text-slate-300 text-left text-balance text-sm max-w-md md:max-w-xl lg:max-w-4xl lg:text-lg opacity-0">
                 <PrismicRichText field={slice.primary.body} />
             </div>
             )}
