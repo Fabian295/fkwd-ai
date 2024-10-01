@@ -28,7 +28,7 @@ const CallToActionSlice = ({ slice }: CallToActionSliceProps): JSX.Element => {
       <div className="glow absolute -z-10 aspect-square rounded-full w-full max-w-sm bg-blue-500/50 blur-[160px] filter" />
 
       <div className="max-w-screen  flex flex-row justify-between items-center gap-16 mx-auto">
-        <div className="glass-container sm:hidden md:block rounded-lg bg-gradient-to-b from-slate-900 to-slate-950 p-4 md:rounded-xl">
+        <div className="glass-container hidden md:block rounded-lg bg-gradient-to-b from-slate-900 to-slate-950 p-4 md:rounded-xl">
           {/* <PlainGradientLogo /> */}
           <FkIconLogoBlue />
         </div>
