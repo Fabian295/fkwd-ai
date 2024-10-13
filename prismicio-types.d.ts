@@ -1156,6 +1156,51 @@ type CasesSliceVariation = CasesSliceDefault | CasesSliceDirectionRow;
 export type CasesSlice = prismic.SharedSlice<"cases", CasesSliceVariation>;
 
 /**
+ * Primary content in *ContactSlice → Default → Primary*
+ */
+export interface ContactSliceSliceDefaultPrimary {
+  /**
+   * PageTitle field in *ContactSlice → Default → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: contact_slice.default.primary.pagetitle
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  pagetitle: prismic.RichTextField;
+}
+
+/**
+ * Default variation for ContactSlice Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type ContactSliceSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<ContactSliceSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *ContactSlice*
+ */
+type ContactSliceSliceVariation = ContactSliceSliceDefault;
+
+/**
+ * ContactSlice Shared Slice
+ *
+ * - **API ID**: `contact_slice`
+ * - **Description**: ContactSlice
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type ContactSliceSlice = prismic.SharedSlice<
+  "contact_slice",
+  ContactSliceSliceVariation
+>;
+
+/**
  * Item in *CustomerLogos → Default → Primary → logos*
  */
 export interface CustomerLogosSliceDefaultPrimaryLogosItem {
@@ -2239,6 +2284,10 @@ declare module "@prismicio/client" {
       CasesSliceVariation,
       CasesSliceDefault,
       CasesSliceDirectionRow,
+      ContactSliceSlice,
+      ContactSliceSliceDefaultPrimary,
+      ContactSliceSliceVariation,
+      ContactSliceSliceDefault,
       CustomerLogosSlice,
       CustomerLogosSliceDefaultPrimaryLogosItem,
       CustomerLogosSliceDefaultPrimary,
