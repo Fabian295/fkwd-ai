@@ -119,6 +119,7 @@ export type CaseStudyDocument<Lang extends string = string> =
   >;
 
 type PageDocumentDataSlicesSlice =
+  | ContactSliceSlice
   | CallToActionSliceSlice
   | IntegrationsSlice
   | FkLandingFullSlice
