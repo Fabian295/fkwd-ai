@@ -9,6 +9,7 @@ export const components = {
   call_to_action_slice: dynamic(() => import("./CallToActionSlice")),
   case_study: dynamic(() => import("./CaseStudies")),
   cases: dynamic(() => import("./Cases")),
+  contact_slice: dynamic(() => import("./ContactSlice")),
   customer_logos: dynamic(() => import("./CustomerLogos")),
   fk_landing_full: dynamic(() => import("./FkLandingFull")),
   hero: dynamic(() => import("./Hero")),
