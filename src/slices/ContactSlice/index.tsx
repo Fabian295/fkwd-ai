@@ -20,7 +20,7 @@ const ContactSlice = ({ slice }: ContactSliceProps): JSX.Element => {
         <div className="page-title text-blue-200 text-4xl">
               <PrismicRichText field={slice.primary.pagetitle} />
         </div>
-        <div className="glass-container mt-10 md:mt-20 lg:mt-30">
+        <div className="w-[90%] glass-container mx-auto mt-10 md:mt-20 lg:mt-30">
           <div className="container mx-auto">
 
               <div className="contact-form bg-[#051d51] mx-auto p-5 max-w-full md:max-w-[600px] lg:max-w-[1200px]">
