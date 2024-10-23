@@ -23,7 +23,7 @@ const ContactSlice = ({ slice }: ContactSliceProps): JSX.Element => {
         <div className="container w-[80%] glass-container mx-auto mt-10 md:mt-20 lg:mt-30">
           {/* <div className="container mx-auto"> */}
 
-              <div className="contact-form bg-[#051d51] mx-auto p-5 max-w-full md:max-w-[600px] lg:max-w-[1200px]">
+              <div className="contact-form bg-[#051d51] mx-auto p-5 max-w-full md:max-w-[600px] lg:max-w-[800px]">
               <h2 className="text-[#4f97f0] text-center md:text-2xl mb-5 md:mb-7">Contact Us</h2>
               <form action="#" method="post" id="contactForm">
                 <div className="form-group">
