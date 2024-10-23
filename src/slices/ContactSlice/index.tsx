@@ -20,8 +20,8 @@ const ContactSlice = ({ slice }: ContactSliceProps): JSX.Element => {
         {/* <div className="page-title text-blue-200 text-4xl">
               <PrismicRichText field={slice.primary.pagetitle} />
         </div> */}
-        <div className="w-[90%] glass-container mx-auto mt-10 md:mt-20 lg:mt-30">
-          <div className="container mx-auto">
+        <div className="container w-[80%] glass-container mx-auto mt-10 md:mt-20 lg:mt-30">
+          {/* <div className="container mx-auto"> */}
 
               <div className="contact-form bg-[#051d51] mx-auto p-5 max-w-full md:max-w-[600px] lg:max-w-[1200px]">
               <h2 className="text-[#4f97f0] text-center md:text-2xl mb-5 md:mb-7">Contact Us</h2>
@@ -31,7 +31,10 @@ const ContactSlice = ({ slice }: ContactSliceProps): JSX.Element => {
                   
                   {isFilled.keyText(slice.primary.first_name) && (
                     <label className="block text-[#4f97f0] mb-1 md:mt-3 lg:mt-4 font-bold" htmlFor="firstName">
-                  </label>)}:
+                      First Name: 
+
+                  </label>
+                  )}
                   
                   <PrismicRichText field={slice.primary.first_name_input} />
                   <input className="w-full p-3 md:px-4 lg:px-6 text-white text-lg border border-[#4f97f0] rounded-md box-border outline-none bg-[#00000002]" type="text" id="firstName" name="firstName" required />
@@ -52,7 +55,7 @@ const ContactSlice = ({ slice }: ContactSliceProps): JSX.Element => {
               </form>
             </div>
 
-          </div>
+          {/* </div> */}
         </div>
 
       </Bounded>
