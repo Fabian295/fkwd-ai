@@ -1161,14 +1161,84 @@ export type CasesSlice = prismic.SharedSlice<"cases", CasesSliceVariation>;
  */
 export interface ContactSliceSliceDefaultPrimary {
   /**
-   * PageTitle field in *ContactSlice → Default → Primary*
+   * First Name field in *ContactSlice → Default → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: contact_slice.default.primary.first_name
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  first_name: prismic.KeyTextField;
+
+  /**
+   * First Name Input field in *ContactSlice → Default → Primary*
    *
    * - **Field Type**: Rich Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: contact_slice.default.primary.pagetitle
+   * - **API ID Path**: contact_slice.default.primary.first_name_input
    * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
-  pagetitle: prismic.RichTextField;
+  first_name_input: prismic.RichTextField;
+
+  /**
+   * Last  Name field in *ContactSlice → Default → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: contact_slice.default.primary.last_name
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  last_name: prismic.KeyTextField;
+
+  /**
+   * Last Name Input field in *ContactSlice → Default → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: contact_slice.default.primary.last_name_input
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  last_name_input: prismic.RichTextField;
+
+  /**
+   * Email field in *ContactSlice → Default → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: contact_slice.default.primary.email
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  email: prismic.KeyTextField;
+
+  /**
+   * Email Input field in *ContactSlice → Default → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: contact_slice.default.primary.email_input
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  email_input: prismic.RichTextField;
+
+  /**
+   * Message field in *ContactSlice → Default → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: contact_slice.default.primary.message
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  message: prismic.KeyTextField;
+
+  /**
+   * Message Text Area field in *ContactSlice → Default → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: What's on your mind? Write a concise message here...
+   * - **API ID Path**: contact_slice.default.primary.message_text_area
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  message_text_area: prismic.RichTextField;
 }
 
 /**

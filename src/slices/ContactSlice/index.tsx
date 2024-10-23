@@ -1,5 +1,5 @@
 import Bounded from "@/components/Bounded";
-import { Content } from "@prismicio/client";
+import { Content, isFilled } from "@prismicio/client";
 import { PrismicRichText, SliceComponentProps } from "@prismicio/react";
 
 /**
@@ -17,9 +17,9 @@ const ContactSlice = ({ slice }: ContactSliceProps): JSX.Element => {
       data-slice-variation={slice.variation}
     >
       <Bounded>
-        <div className="page-title text-blue-200 text-4xl">
+        {/* <div className="page-title text-blue-200 text-4xl">
               <PrismicRichText field={slice.primary.pagetitle} />
-        </div>
+        </div> */}
         <div className="w-[90%] glass-container mx-auto mt-10 md:mt-20 lg:mt-30">
           <div className="container mx-auto">
 
@@ -27,7 +27,13 @@ const ContactSlice = ({ slice }: ContactSliceProps): JSX.Element => {
               <h2 className="text-[#4f97f0] text-center md:text-2xl mb-5 md:mb-7">Contact Us</h2>
               <form action="#" method="post" id="contactForm">
                 <div className="form-group">
-                  <label className="block text-[#4f97f0] mb-1 md:mt-3 lg:mt-4 font-bold" htmlFor="firstName">First Name:</label>
+                
+                  
+                  {isFilled.keyText(slice.primary.first_name) && (
+                    <label className="block text-[#4f97f0] mb-1 md:mt-3 lg:mt-4 font-bold" htmlFor="firstName">
+                  </label>)}:
+                  
+                  <PrismicRichText field={slice.primary.first_name_input} />
                   <input className="w-full p-3 md:px-4 lg:px-6 text-white text-lg border border-[#4f97f0] rounded-md box-border outline-none bg-[#00000002]" type="text" id="firstName" name="firstName" required />
                 </div>
                 <div className="form-group">

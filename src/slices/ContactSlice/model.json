@@ -12,11 +12,66 @@
       "description": "Default",
       "imageUrl": "",
       "primary": {
-        "pagetitle": {
+        "first_name": {
+          "type": "Text",
+          "config": {
+            "label": "First Name",
+            "placeholder": ""
+          }
+        },
+        "first_name_input": {
           "type": "StructuredText",
           "config": {
-            "label": "PageTitle",
+            "label": "First Name Input",
             "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "last_name": {
+          "type": "Text",
+          "config": {
+            "label": "Last  Name",
+            "placeholder": ""
+          }
+        },
+        "last_name_input": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Last Name Input",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "email": {
+          "type": "Text",
+          "config": {
+            "label": "Email",
+            "placeholder": ""
+          }
+        },
+        "email_input": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Email Input",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "message": {
+          "type": "Text",
+          "config": {
+            "label": "Message",
+            "placeholder": ""
+          }
+        },
+        "message_text_area": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Message Text Area",
+            "placeholder": "What's on your mind? Write a concise message here...",
             "allowTargetBlank": true,
             "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
           }
