@@ -40,7 +40,7 @@ export default function NavBar( {settings }: NavBarProps ) {
             
             </div>
             
-            <div className={clsx("fixed left-0 bottom-0 right-0 top-0 z-40 flex flex-col items-end gap-4 bg-[#070815] pr-4 pt-14 transition-transform duration-300 ease-in-out motion-reduce:transition-none md:hidden",
+            <div className={clsx("fixed left-0 bottom-0 right-0 top-0 z-40 flex flex-col items-end gap-4 bg-[#070815] pr-4 pt-14 transition-all duration-300 ease-in-out motion-reduce:transition-none md:hidden",
             open ? "translate-x-0": "translate-x-[100%]"
             )}
             >
