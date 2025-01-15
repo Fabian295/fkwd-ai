@@ -8,22 +8,52 @@ import { PrismicNextImage } from "@prismicio/next";
 import { PrismicRichText, PrismicText, SliceComponentProps } from "@prismicio/react";
 import { gsap } from 'gsap';
 import { useGSAP } from '@gsap/react';
+import usePrefersReducedMotion from "@/hooks/usePrefersReducedMotion";
 // import { HeroProps } from '.';
 
 export default function AnimatedContent({ slice }: {slice: Content.HeroSlice}) {
 // export default function AnimatedContent({ slice }: SliceComponentProps<Content.HeroSlice>): React.JSX.Element {
     const container = useRef(null);
+    const prefersReducedMotion = usePrefersReducedMotion()
     gsap.registerPlugin(useGSAP)
 
     useGSAP(() => {
 
+        if ( prefersReducedMotion ) {
+            gsap.set(
+                ".hero__heading, .hero__body, .hero__button, .hero__image, .hero__glow",
+                { opacity: 1 }                
+            );
+            return
+        }
+
         const tl = gsap.timeline({ defaults: { ease: "power2.inOut" } });
 
-        tl.fromTo(".hero__heading", {scale: 0.5}, {scale: 1, opacity: 1})
-        tl.fromTo(".hero__body", {scale: 0.5}, {scale: 1, opacity: 1})
-        tl.fromTo(".hero__button", {scale: 0.5}, {scale: 1, opacity: 1})
-        tl.fromTo(".hero__image", {scale: 0.5}, {scale: 1, opacity: 1})
-        tl.fromTo(".hero__glow", {scale: 0.5}, {scale: 1, opacity: 1})
+        tl.fromTo(".hero__heading", {scale: 0.5}, {scale: 1, opacity: 1,  duration: 1})
+        tl.fromTo(
+            ".hero__body", 
+            { y: 30 }, 
+            { y: 0, opacity: 1,  duration: 1.2 },
+            "-=0.2"
+         )
+        tl.fromTo(
+            ".hero__button", 
+            { scale: 2 }, 
+            { scale: 1, opacity: 1, duration: 1.5, ease: "bounce.out" },
+            "-=0.4"
+            )
+        tl.fromTo(
+            ".hero__image", 
+            { y: 100 }, 
+            { y: 0, opacity: 1, duration: 1.3 },
+            "-=0.6"
+            )
+        tl.fromTo(
+            ".hero__glow", 
+            { scale: 0.5 }, 
+            { scale: 1, opacity: 1, duration: 1.1 }, 
+            "-=0.5"
+            )
         
     }, { scope: container })
   return (
